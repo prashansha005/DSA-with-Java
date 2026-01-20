@@ -57,7 +57,23 @@ public class CircularQueue {
         System.out.println(ITEM+"Deleted from queue");
     }
 
-    
+    //Display Operation
+    public static void display(){
+        if(isEmpty()){
+            System.out.println("Queue isEmpty");
+            return;
+        }
+
+        System.out.println("Queue elements:");
+        int i=F;
+        while(true){
+            System.out.print(queue[i]+"");
+            if(i==R)break;
+            i = (i + 1) % N;
+        }
+        System.out.println();
+    }
+
     public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);
 
