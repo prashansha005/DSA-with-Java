@@ -6,7 +6,9 @@
             this.data = data;
             this.next = null;
         }
-        public static void main(String[] args) {
+    }
+        public class DynamicListLinkedList {
+            public static void main(String[] args) {
         Node head = new Node(20);
         Node second = new Node(40);
         Node third = new Node(40);
@@ -21,9 +23,10 @@
         System.out.println(temp.data);
         temp=temp.next;
     }
-
-    }
-    
 }
+        
+}
+        
+
     
 
