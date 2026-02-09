@@ -99,15 +99,6 @@ public class LinkedListImpl{
            return;
         }
 
-        // Node secondLast=head;
-        // Node lastnNode=head.next;
-        // while (lastnNode.next!=null) {
-        //     lastnNode=lastnNode.next;
-        //     secondLast=secondLast.next;    
-        // }
-        // secondLast.next=null;
-        // System.out.println("Delete last element");
-
         Node temp = head;
         while (temp.next.next != null) {
             temp = temp.next;
