@@ -26,7 +26,15 @@ class Node{
 
     // Algorithm for pop operation
 
-        
+        public int pop() {
+        if(top==null){
+            System.out.println("Stack is underflow! stack is empty");
+            return -1;
+        }
+        int element=top.data;
+        top=top.next;//top moves to next address
+        return element;
+    }
     }
     class DoublyLinkedList {
 
